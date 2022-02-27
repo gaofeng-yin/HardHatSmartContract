@@ -14,7 +14,7 @@ async function main() {
     console.log("Deployed MyFirstContract contract address:", deployedContract.address);
  
  
-    await deployedContract.setNumber(7)
+    await deployedContract.setNumber(10)
  
     let result = BigInt(await deployedContract.getNumber()).toString()
     console.log('Stored value in contract is: ', result)
